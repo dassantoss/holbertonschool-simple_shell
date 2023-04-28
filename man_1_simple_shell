@@ -1,0 +1,53 @@
+.TH HSH 1 "April 2023" "HSH User Manual"
+
+.SH NAME
+hsh - A simple UNIX command interpreter
+
+.SH SYNOPSIS
+hsh [command [arguments...]]
+
+.SH DESCRIPTION
+The hsh command is a basic UNIX command interpreter that reads commands from either standard input or from a file and executes them.
+
+.SH OPTIONS
+The hsh command does not currently support any options.
+
+.SH COMMANDS
+The hsh command supports the following built-in commands:
+.PP
+.IP "\fBexit\fR"
+Exit the shell with a status of 0.
+.PP
+.IP "\fBenv\fR"
+Print the current environment.
+.PP
+.IP "\fBcd\fR"
+Change the current working directory.
+.PP
+
+.SH EXIT STATUS
+The hsh command returns the following exit values:
+.PP
+.IP "0"
+Successful termination.
+.IP "1"
+An error occurred.
+
+.SH FILES
+/etc/passwd - User account information.
+/etc/profile - Systemwide initialization file.
+
+.SH SEE ALSO
+sh(1), bash(1), ksh(1), tcsh(1)
+
+.SH BUGS
+The hsh command may not handle all commands or shell features as expected.
+
+.SH AUTHOR
+This manual page was written by [Santiago Echeverri Londoño] <[santy.e@gmail.com]> for the hsh project at Holberton School.
+
+.SH COPYRIGHT
+Copyright (c) [2023] [Santiago Echeverri Londoño]
+
+This manual page is licensed under the terms of the MIT license. See the LICENSE file for more information.
+
